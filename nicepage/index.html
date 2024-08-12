@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nicePage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            height: 60px;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            background-color: white;
+        }
+
+
+        #content {
+            height: 100vh;
+            background-image: url("./Assets/pexelsphoto1927507.jpeg");
+            width: 100%;
+            background-size: cover;
+            color: white;
+            display: grid;
+        }
+
+        #art {
+            margin-left: 10%;
+            margin-top: 10%;
+            font-size: 70px;
+        }
+
+        #school {
+            margin-left: 15%;
+            margin-top: 5%;
+            font-size: 200px;
+        }
+
+        #d2 {
+            width: 100%;
+            height: 48vh;
+            background-color: rgb(103, 163, 181);
+            display: flex;
+        }
+
+        #d2a {
+
+            display: grid;
+            grid-template-rows: repeat(2, 80px);
+            width: 50%;
+            height: 50vh;
+            padding-top: 90px;
+            padding-left: 405px;
+        }
+
+        #d2b {
+            display: flex;
+            align-items: center;
+            width: 40%;
+            height: 50vh;
+        }
+
+        .d3 {
+            width: 100%;
+            height: 80vh;
+
+        }
+
+        #d3a {
+            margin-left: 60vh;
+            margin-bottom: 15vh;
+            width: 45%;
+            display: grid;
+            grid-template-rows: repeat(2, 4vh);
+            text-align: center;
+        }
+
+        #d3b {
+            display: grid;
+            grid-template-rows: repeat(3, 190px);
+            grid-template-columns: repeat(3, 300px);
+            margin-left: 35vh;
+
+        }
+
+        .d3b1 {
+            padding: 20px;
+        }
+
+        .d4 {
+            width: 100%;
+            height: 80vh;
+            display: grid;
+            background-color: black;
+            grid-template-columns: repeat(2, 300px);
+            grid-template-rows: repeat(1, 400px);
+            padding-top: 40px;
+            padding-left: 50vh;
+            gap: 20px;
+        }
+
+        .d4_img_div {
+            background-image: url("Assets/pexelsphoto207732.jpeg");
+            background-size: cover;
+        }
+
+        .d4_content {
+            color: white;
+            padding-top: 100px;
+        }
+
+        .d4_btn {
+            width: 100px;
+            height: 35px;
+            margin-top: 25px;
+            background-color: aquamarine;
+            border: none;
+            cursor: pointer;
+        }
+
+        .d5 {
+            width: 100%;
+            height: 240vh;
+        }
+
+        .d5a {
+            display: grid;
+            grid-template-rows: repeat(2, 50px);
+            grid-template-columns: repeat(1, 500px);
+            padding-left: 30%;
+            text-align: center;
+        }
+
+        .d5b {
+            display: grid;
+            grid-template-columns: repeat(2, 300px);
+            grid-template-rows: repeat(3, 400px);
+            gap: 20px;
+            margin-top: 40px;
+            margin-left: 50vh;
+        }
+
+        #i1 {
+            background-image: url("./Assets/d51.jpeg");
+            background-image: cover;
+        }
+
+        #i2 {
+            background-image: url("./Assets/d52.jpeg");
+            background-image: cover;
+        }
+
+        #i3 {
+            background-image: url("./Assets/d53.jpeg");
+            background-image: cover;
+        }
+
+        #i4 {
+            background-image: url("./Assets/d54.jpeg");
+            background-image: cover;
+        }
+
+        #i5 {
+            background-image: url("./Assets/d55.jpg");
+            background-size: cover;
+        }
+
+        #i6 {
+            background-image: url("./Assets/d56.jpeg");
+            background-size: cover;
+        }
+
+        .d6 {
+            width: 100%;
+            height: 40vh;
+            background-color: rgb(148, 169, 162);
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            color: white;
+            font-size: 25px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+
+
+
+        .d7 {
+            width: 100%;
+            height: 90vh;
+            background-color: aquamarine;
+            display: grid;
+            grid-template-columns: repeat(3, 33.33%);
+            grid-template-rows: repeat(1, 90vh);
+        }
+
+        #d71 {
+            background-image: url(./Assets/d71.jpeg);
+            background-size: cover;
+        }
+
+        #d72 {
+            background-image: url(./Assets/d72.jpeg);
+            background-size: cover;
+        }
+
+        #d73 {
+            background-image: url(./Assets/d73.jpeg);
+            background-size: cover;
+        }
+
+        .d8 {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            grid-template-rows: 80vh;
+            background-color: black
+        }
+
+        .d8_content {
+            height: 80vh;
+            padding-left: 40px;
+            color: white;
+            padding-top: 100px;
+            background-color: gray;
+        }
+
+        .d8_msg {
+            height: 80vh;
+            width: 50%;
+        }
+
+        .d8_form {
+
+            color: white;
+            margin-top: 150px;
+            margin-left: 130px;
+        }
+
+        .d8_i {
+            width: 350px;
+            height: 28px;
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+        }
+
+        .d8_txt {
+            width: 350px;
+            height: 100px;
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+        }
+
+        .d8_submit {
+            width: 70px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        footer {
+            width: 100%;
+            height: 10vh;
+            background-color: rgb(55, 52, 52);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <img src="./Assets/logo-w.png">
+        <button style="background-color: white; cursor: pointer; border: none; color: gray; font-size: 20px;">X</button>
+    </nav>
+
+    <div id="content">
+        <h1 id="art">ART</h1>
+        <h1 id="school">School</h1>
+    </div>
+             
+    <div id="d2">
+
+        <div id="d2a">
+            <h1 style="color: white;">Children's<br> Art School</h1>
+            <h2 style="color: black;">About Our School</h2>
+        </div>
+        <div id="d2b">
+            <p style="color: white;">We are a leading artistic educational provider, offering in-depth learning
+                opportunities for both
+                students and teachers looking to develop their skills.
+                Key information about the University’s history, mission and values, governance and committees,
+                affiliations and associations and official publications.</p>
+        </div>
+    </div>
+    <div class="d3">
+
+        <div id="d3a">
+            <h3>All Our Programs</h3>
+            <p>At The Marvegos Fine Art School we encourage creativity through art — making one’s
+                own choices within a
+                framework is the essence of creative choice.
+            </p>
+        </div>
+        <div id="d3b">
+
+            <div class="d3b1">
+                <i class="fa-sharp fa-regular fa-lightbulb" style="font-size: 20px; color: grey"></i>
+                <h3 style="margin-top: 5px; margin-bottom: 10px;">Art Exploration</h3>
+                <p>Our approach to art making for preschoolers and younger kids is age appropriate and fun</p>
+            </div>
+            <div class="d3b1">
+                <i class="fa-solid fa-paintbrush" style="font-size: 20px;  color: grey""></i>
+                <h3 style=" margin-top: 5px; margin-bottom: 10px;">Fine Art Fundamentals</h3>
+                    <p>Structured as a developmental program spanning four sessions during one school year.</p>
+            </div>
+            <div class=" d3b1">
+                <i class="fa-solid fa-gamepad" style="font-size: 20px;  color: grey""></i>
+                <h3 style=" margin-top: 5px; margin-bottom: 10px;">Advanced Exploration</h3>
+                    <p>This program is designed to develop self-directed art makers, the students design their own
+                        projects.
+                    </p>
+            </div>
+            <div class=" d3b1">
+                <i class="fa-solid fa-tent" style="font-size: 20px;  color: grey""></i>
+                <h3 style=" margin-top: 5px; margin-bottom: 10px;">Spring Break Camps</h3>
+                    <p>Our week long school break programs are designed to give students a way to grow artistically at a
+                        more leisurely pace</p>
+            </div>
+            <div class=" d3b1">
+                <i class="fa-solid fa-medal" style="font-size: 20px;  color: grey"></i>
+                <h3 style="margin-top: 5px; margin-bottom: 10px;">Art Camps & Classes</h3>
+                <p>Our summer art camps allow kids to explore the full variety of art media from drawing
+                    still life</p>
+            </div>
+            <div class="d3b1">
+                <i class="fa-solid fa-house" style="font-size: 20px;  color: grey""></i>
+                <h3 style=" margin-top: 5px; margin-bottom: 10px;">Homeschool Art</h3>
+                    <p>Our homeschool art classes feature a curriculum that will develop your child’s creative and
+                        critical
+                        thinking</p>
+            </div>
+        </div>
+
+    </div>
+    <div class=" d4">
+
+        <div class="d4_img_div">
+
+        </div>
+        <div class="d4_content">
+            <h1>We'd love to hear from you</h1>
+            <P>The atmosphere is relaxed, fun and social, allowing kids to pursue their own creative bent
+                and focus on a
+                single project to completion. Many students register for multiple weeks and never get bored
+                because the
+                projects vary every week.</P>
+            <button class="d4_btn">read more</button>
+        </div>
+    </div>
+
+    <div class="d5">
+
+        <div class="d5a">
+            <h1>OUR GALLERY</h1>
+            <p>The Art Education Section aims at teaching art and spreading interest in art among different age
+                groups.
+                This is achieved through diverse trainings and workshops for different categories.</p>
+        </div>
+
+        <div class="d5b">
+
+            <div id="i1"></div>
+            <div id="i2"></div>
+            <div id="i3"></div>
+            <div id="i4"></div>
+            <div id="i5"></div>
+            <div id="i6"></div>
+
+
+        </div>
+    </div>
+
+    <div class="d6">
+        <div class="stats">
+            <div class="stat">
+                <h2 id="students">0</h2>
+                <p>Students</p>
+            </div>
+            <div class="stat">
+                <h2 id="teachers">0</h2>
+                <p>Teachers</p>
+            </div>
+            <div class="stat">
+                <h2 id="winners">0</h2>
+                <p>Winners</p>
+            </div>
+            <div class="stat">
+                <h2 id="awards">0</h2>
+                <p>Awards</p>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <div class="d7">
+
+        <div id="d71"> </div>
+        <div id="d72"> </div>
+        <div id="d73"> </div>
+
+    </div>
+    <div class="d8">
+        <div class="d8_content">
+            <h1>Questions?</h1>
+            <h1>Comments?</h1>
+            <h1>We'd love to hear from you.</h1>
+            <p>The school is open 10:00am to 5:00pm Tuesday to Friday and 10:00am to 3:00pm on Saturday. During
+                July and
+                August Summer Camps, we're open from Monday to Friday 8:30am to 4:30pm.</p>
+            <br>
+            <p>
+                Our mailing address is:<br>
+                152A Charlotte Street,<br>
+                Peterborough ON<br>
+                Phone: 705-742-3221<br>
+            </p>
+            <p style="margin-top: 10px;"><i class="fa-brands fa-facebook"></i>&nbsp;<i
+                    class="fa-brands fa-twitter"></i>&nbsp;<i class="fa-brands fa-instagram"></i>&nbsp;
+                <i class="fa-solid fa-p"></i>&nbsp;
+                <i class="fa-solid fa-basketball"></i>
+            </p>
+
+        </div>
+        <div class="d8_msg">
+
+            <form class="d8_form">
+
+                <input class="d8_i" placeholder="Enter your name"><br><br>
+                <input class="d8_i" placeholder="Enter a valid email adress"><br><br>
+                <input class="d8_txt" placeholder="Enter your message"><br><br>
+                <button class="d8_submit">Submit</button>
+            </form>
+
+        </div>
+
+    </div>
+    <footer class="foot">
+        <p style="color:white"><a style="text-decoration: underline; cursor: pointer;">Website Templates </a>
+            created
+            with <a style="text-decoration: underline; cursor: pointer;"> website
+                builder
+                software</a></p>
+    </footer>
+
+
+    <script>
+// Function to animate numbers
+function animateValue(id, start, end, duration, step = 1) {
+    let current = start;
+    const range = end - start;
+    const increment = end > start ? step : -step;
+    const stepTime = Math.abs(Math.floor(duration / (range / step)));
+    const obj = document.getElementById(id);
+    const timer = setInterval(function() {
+        current += increment;
+        obj.textContent = current.toLocaleString(); // Format with commas
+        if (current >= end) {
+            clearInterval(timer);
+            obj.textContent = end.toLocaleString(); // Ensure it ends exactly at the end value
+        }
+    }, stepTime);
+}
+
+// Function to check if the element is in view
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Flag to ensure animation happens only once
+let hasAnimated = false;
+
+// Event listener for scrolling
+window.addEventListener('scroll', function() {
+    const d6 = document.querySelector('.d6');
+    if (isInViewport(d6) && !hasAnimated) {
+        animateValue("students", 0, 5000, 2000, 1000); // Increment by 1000
+        animateValue("teachers", 0, 150, 1500);
+        animateValue("winners", 0, 150, 1500);
+        animateValue("awards", 0, 150, 1500);
+        hasAnimated = true; // Prevents re-triggering the animation
+    }
+});
+
+
+    </script>
+</body>
+
+</html>

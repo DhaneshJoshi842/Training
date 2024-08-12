@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* <!-- psudo class --> */
+        ul li:first-child {
+            background-color: aqua;
+        }
+
+        ul li:last-child {
+            background-color: red;
+        }
+
+        ul li:nth-child(2n) {
+            background-color: blue;
+        }
+
+        ul li:nth-child(2n+1) {
+            background-color: bisque;
+        }
+
+
+        /* <!-- psudo elements --> */
+
+        ::selection {
+            background-color: black;
+            color: blue;
+        }
+
+        p::first-letter {
+            background-color: bisque;
+        }
+
+        p::first-line {
+            background-color: brown;
+        }
+        p::before{
+            content: "Hello Techno";
+            background-color: blueviolet;
+        }
+        p:hover::after{
+            content: "By Techno";
+            background-color: blueviolet;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- psudo class -->
+    <!-- hover,visited,active,first child,last child,nth child -->
+    <ul>
+        <li>
+            first
+        </li>
+        <li>
+            second
+        </li>
+        <li>
+            third
+        </li>
+        <li>
+            fourth
+        </li>
+        <li>
+            fifth
+        </li>
+        <li>
+            sixth
+        </li>
+        <li>
+            seventh
+        </li>
+    </ul>
+    <!-- psudo elements -->
+    <!-- first letter,first line, before,after,selection-->
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias distinctio magni qui expedita ut quisquam, earum
+        ab quae molestias architecto exercitationem ad deleniti ex! Esse libero at aspernatur nobis dolor?Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Necessitatibus possimus ullam error iusto, dignissimos molestias
+        distinctio molestiae velit quaerat cumque illo. Nobis veritatis rerum doloremque consectetur eius provident
+        vero! Odio?
+    </p>
+
+</body>
+
+</html>

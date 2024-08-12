@@ -1,0 +1,22 @@
+.head {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    background-color: rgb(81, 58, 146);
+}
+
+.head_compo {
+    height: 20px;
+    align-self: center;
+    margin-left: 10px;
+
+}
+
+#main {
+    margin-left: 400px;
+    width: 450px;
+}
+
+body {
+    background-color: rgb(234, 235, 242);
+}

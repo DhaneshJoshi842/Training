@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div {
+            width: 400px;
+            height: 400px;
+            background-color: bisque;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: 2s ease-in;
+            transform: rotate(90deg); */
+        /* transform: translate(100px);
+              transform: rotate(150deg); */
+        /* transform: skewX(30deg); */
+        /* transform: skewy(46deg); */
+        /* } */
+
+        /* div:hover {
+            background-color: aqua;
+            border-radius: 50%;
+            transition: 2s ease-in;
+            transform: rotate(360deg);
+        } */
+
+        #bbox {
+            height: 350px;
+            width: 350px;
+            background-color: aquamarine;
+            margin: auto;
+        }
+
+        #box {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            animation: spinner 4s ease-in-out infinite;
+        }
+
+        @keyframes spinner {
+
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            25% {
+                transform: translate(300px, 0);
+            }
+
+            50% {
+                transform: translate(300px, 300px);
+            }
+
+            75% {
+                transform: translate(0, 300px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- transform -->
+    <div>
+        Hello
+    </div>
+
+    <div id="bbox">
+        <div id="box">
+
+            BYE BYE
+
+        </div>
+    </div>
+</body>
+
+</html>
